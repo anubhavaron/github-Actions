@@ -17,6 +17,7 @@ jobs:
         echo "{{github.token}}"
         # git clone git@github:$GITHUB_REPOSITORY
         # git Checkout $GITHUB_SHA
+        
     - name: Checkout Actions
       uses: actions/checkout@v1
     - name: List Files After Checkout
