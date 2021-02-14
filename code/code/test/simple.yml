@@ -16,7 +16,7 @@ jobs:
         run: |
           import platform
           print(platform.processor())
-          print("HELLO")
+          print("HELLO")  
         shell: python
   run-windows-command:
     runs-on: windows-latest
