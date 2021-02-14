@@ -1,10 +1,21 @@
 name: BASIC PR
 
-on: [pull_request]
-
+on: 
+  push:
+  pull-request:
+    types: [closed, assigned, opened]
 jobs: 
-  run-shell-command: 
+  run-github-actions: 
     runs-on: ubuntu-latest
-    steps: 
-      - name: eccho a string
-        run: ecnho "Hello"
+    steps:
+    - name: List Files
+      run: |
+        pwd
+        echo $GITHUB_SHA
+        echo $GITHUB_REPOSITORY
+        echo $GITHUB_WORKSPACE
+        echo $GITHUB
+        echo "{{github.token}}"
+        # git clone git@github:$GITHUB_REPOSITORY
+        # git Checkout $GITHUB_SHA
+        
