@@ -1,4 +1,4 @@
-name: BASIC PR
+name: BASIC PR CHECK
 
 on: 
   push:
