@@ -1,0 +1,10 @@
+name: BASIC PR
+
+on: [pull_request]
+
+jobs: 
+  run-shell-command: 
+    runs-on: ubuntu-latest
+    steps: 
+      - name: eccho a string
+        run: ecnho "Hello"
