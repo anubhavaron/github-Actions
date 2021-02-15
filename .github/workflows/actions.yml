@@ -7,9 +7,10 @@ jobs:
     steps:
       - name : Checkout 
         uses: actions/checkout@v1
-      # - uses: ./github/actions/Hello
-      #   id: hello
-      #   with:
-      #     who-to-greet: "World"
+      - name: Use Hello
+        uses: ./github/actions/Hello
+        id: hello
+        with:
+          who-to-greet: "World"
       # - run: 
       #   echo " Time: ${{ steps.hello.outputs.time}} " 
