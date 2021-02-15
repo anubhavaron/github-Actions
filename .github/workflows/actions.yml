@@ -1,6 +1,5 @@
 name: ABC
 on: push
-
 jobs:
   testing:
     runs-on: ubuntu-latest
@@ -10,4 +9,6 @@ jobs:
       #   id: hello
       #   with:
       #     who-to-greet: "World"
-      - run: echo "Hi"  
+      - name : Log Env VAR
+        run: |
+          echo "Hi" 
