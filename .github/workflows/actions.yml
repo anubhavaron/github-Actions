@@ -12,5 +12,7 @@ jobs:
         id: hello
         with:
           who-to-greet: "World"
+      - name: Output
+        run: echo ${{steps.hello.outputs.time}}
       # - run: 
       #   echo " Time: ${{ steps.hello.outputs.time}} " 
