@@ -2,13 +2,9 @@ name: INDEX
 on: push
 
 jobs:
-  testing-action:
+  functions:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - uses: ./github/actions/Hello
-        id: hello
-        with:
-          who-to-greet: "World"
-      - run: 
-        echo " Time: ${{ steps.hello.outputs.time}} " 
+      - name: Dump
+        run: |
+          echo ${{ contains('hello', 'll')}}
