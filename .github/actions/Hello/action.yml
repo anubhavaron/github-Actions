@@ -1,0 +1,15 @@
+name: Hello World
+author: Anubhav Aron
+description: BHAI HAI
+inputs: 
+  who-to-greet: 
+    description: "Who to Greet"
+    required: true
+    default: Anubhav
+output:
+  time: 
+    description: "The Greetinng Time"
+
+runs:
+  using: "node12"
+  main: "index.js"
